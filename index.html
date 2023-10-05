@@ -3,36 +3,8 @@
 
 <head>
     <title>My CSTU Webpage</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            margin: 0;
-            background: rgb(30, 32, 34);
-            background: radial-gradient(circle, rgba(30, 32, 34, 1) 30%, rgba(82, 97, 107, 1) 100%);
-            ;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #F0F0F0;
-            padding: 20px;
-            border: 1px solid #ddd;
-
-
-        }
-
-        h2 {
-            color: #213555;
-        }
-
-
-
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
 
         strong {
             font-weight: bold;
@@ -73,28 +45,6 @@
     clear: both;
     display: table;
 }
-.header {
-            background-color: #213555;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        .nav-links ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-links li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
 
     </style>
 
@@ -103,8 +53,8 @@
     <div class="nav-links">
         <ul>
             <li><a href="indexcss.html"> Homepage </a></li>
-            <li><a href="myAdvisor.html"> My Advisor </a></li>
-            <li><a href="myActivities.html"> My Activity </a></li>
+            <li><a href="html/myAdvisor.html"> My Advisor </a></li>
+            <li><a href="html/myActivities.html"> My Activity </a></li>
         </ul>
     </div>
 
@@ -134,7 +84,7 @@
         </p>
 
         <center> <iframe width="500" height="500"
-                src="https://tuipied-my.sharepoint.com/personal/duangkamol_kae_dome_tu_ac_th/_layouts/15/stream.aspx?id=%2Fpersonal%2Fduangkamol%5Fkae%5Fdome%5Ftu%5Fac%5Fth%2FDocuments%2Fcs100%20MyCSTUWebsite%2Fmyvideover2%2Emp4&referrer=OneDriveForBusiness&referrerScenario=OpenFile"
+                src="video/myvideover2.mp4"
                 frameborder="0" allowfullscreen></iframe>
         </center>
 
@@ -158,10 +108,10 @@
 
         <div class="row">
             <div class="column">
-                <img src="../img/pic1.png" alt="Tattoo color concert" style="width: 200px; height: 200px;">
+                <img src="img/pic1.png" alt="Tattoo color concert" style="width: 200px; height: 200px;">
             </div>
             <div class="column">
-                <img src="../img/pic4.png" alt="Please" style="width:200px;height: 200px;">
+                <img src="img/pic4.png" alt="Please" style="width:200px;height: 200px;">
             </div>
             <div class="column">
                 <img src="https://japaneast1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Ftuipied-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!vnhiJzJ15UGwTXZKFRJJT_h4KiDvIIJOlvJOwi1PVousAfp9j1aZT6TpJUcWhKM_%2Fitems%2F01ONQKN66MB6Y7C525FVC2VL4BHSTRRDV2%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvdHVpcGllZC1teS5zaGFyZXBvaW50LmNvbUAwYTQzZGViOS1lZmIwLTRmNDYtODU5NC03MTg5OTIzMGZkYTYiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNjk1MDI3NjAwIiwiZXhwIjoiMTY5NTA0OTIwMCIsImVuZHBvaW50dXJsIjoiYnM2TXRpNGJlQWpiL3k1ZXA1ZFYwbGEwbHk1R00zZFVjZW5jdjdKd1ZKMD0iLCJlbmRwb2ludHVybExlbmd0aCI6IjExNyIsImlzbG9vcGJhY2siOiJUcnVlIiwidmVyIjoiaGFzaGVkcHJvb2Z0b2tlbiIsInNpdGVpZCI6Ik1qYzJNamM0WW1VdE56VXpNaTAwTVdVMUxXSXdOR1F0TnpZMFlURTFNVEkwT1RSbSIsIm5hbWVpZCI6IjAjLmZ8bWVtYmVyc2hpcHxkdWFuZ2thbW9sLmthZUBkb21lLnR1LmFjLnRoIiwibmlpIjoibWljcm9zb2Z0LnNoYXJlcG9pbnQiLCJpc3VzZXIiOiJ0cnVlIiwiY2FjaGVrZXkiOiIwaC5mfG1lbWJlcnNoaXB8MTAwMzIwMDJiYjU4NDYyMEBsaXZlLmNvbSIsInNpZCI6IjQ1YTQ0MTcxLTZmYzUtNDBjZS1hMzJhLTQ2YzIxZTI2MDQ3NSIsInR0IjoiMCIsImlwYWRkciI6IjI3LjU1LjgzLjU2In0.bRqGTqEMC89yyc5aS4BSk2_tBivt1TD0n052W2OVEXk&cTag=%22c%3A%7BF1B10FCC-5D77-452D-AAAF-813CA7188EBA%7D%2C1%22&encodeFailures=1&width=819&height=819&srcWidth=3024&srcHeight=3024" alt="Tattoo color concert at cat t-shirt" style="width: 200px; height: 200px;">
