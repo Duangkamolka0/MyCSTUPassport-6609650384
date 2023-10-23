@@ -1,20 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
 <head>
     <title>My CSTU Webpage</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
+body {
+    background: whitesmoke; 
+}
 
-        strong {
-            font-weight: bold;
-        }
+* {
+  box-sizing: border-box;
+}
 
-        a {
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px;
+  text-align: left;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #002120;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #002120;
+}
+a {
             text-decoration: none;
+            color: #ffffff;
+    
         }
 
-    
+.aside {
+  background-color: #5E5E5E;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
 .column {
     float: left;
     width: 33.33%;
@@ -46,84 +140,92 @@
     display: table;
 }
 
-    </style>
-
+</style>
 </head>
-<section class="header">
-    <div class="nav-links">
-        <ul>
-            <li><a href="indexcss.html"> Homepage </a></li>
-            <li><a href="html/myAdvisor.html"> My Advisor </a></li>
-            <li><a href="html/myActivities.html"> My Activity </a></li>
-        </ul>
-    </div>
-
-</section>
-
 <body>
-    <div class="container">
 
-        <h2> Personal Information </h2>
+<div class="header">
+  <h1>HOMEPAGE</h1>
+</div>
 
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <div class="nav-links"></div>
+    <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="../MyCSTUPassport-6609650384/html/myAdvisor.html">My Advisor</a></li>
+        <li><a href="../MyCSTUPassport-6609650384/html/myActivities.html">My Activity</a></li>
+    </ul>
+  </div>
 
-        <center> <img
-                src="https://japaneast1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Ftuipied-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!vnhiJzJ15UGwTXZKFRJJT_h4KiDvIIJOlvJOwi1PVousAfp9j1aZT6TpJUcWhKM_%2Fitems%2F01ONQKN63C4V2ET4BVPNC2NXT4R54RGBPN%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvdHVpcGllZC1teS5zaGFyZXBvaW50LmNvbUAwYTQzZGViOS1lZmIwLTRmNDYtODU5NC03MTg5OTIzMGZkYTYiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNjk0OTYyODAwIiwiZXhwIjoiMTY5NDk4NDQwMCIsImVuZHBvaW50dXJsIjoiYnM2TXRpNGJlQWpiL3k1ZXA1ZFYwbGEwbHk1R00zZFVjZW5jdjdKd1ZKMD0iLCJlbmRwb2ludHVybExlbmd0aCI6IjExNyIsImlzbG9vcGJhY2siOiJUcnVlIiwidmVyIjoiaGFzaGVkcHJvb2Z0b2tlbiIsInNpdGVpZCI6Ik1qYzJNamM0WW1VdE56VXpNaTAwTVdVMUxXSXdOR1F0TnpZMFlURTFNVEkwT1RSbSIsIm5hbWVpZCI6IjAjLmZ8bWVtYmVyc2hpcHxkdWFuZ2thbW9sLmthZUBkb21lLnR1LmFjLnRoIiwibmlpIjoibWljcm9zb2Z0LnNoYXJlcG9pbnQiLCJpc3VzZXIiOiJ0cnVlIiwiY2FjaGVrZXkiOiIwaC5mfG1lbWJlcnNoaXB8MTAwMzIwMDJiYjU4NDYyMEBsaXZlLmNvbSIsInNpZCI6IjcwNWQ1OTA5LTBkMDgtNDc4Ny1iNDE5LTYyOGZhNWJlMjRmYyIsInR0IjoiMCIsImlwYWRkciI6IjIwMDE6ZmIxOjM6ZDRhZDo2MDdiOjYzMGM6ZjUyOTozZWE3In0.7nF4Zkg7-SmLFqBJ-P37AEQpS0unwZcLv6SttqdEDlA&cTag=%22c%3A%7B4974E562-35F0-457B-A6DE-7C8F791305ED%7D%2C1%22&encodeFailures=1&width=1141&height=819&srcWidth=1516&srcHeight=1089"
-                height="400">
-            <br>
-        </center>
+  <div class="col-6 col-s-9">
+    <h1>Personal Information</h1>
+    <center> <img
+        src="img/pic0.png"
+        height="400">
+    <br>
+</center>
+<p>
+    <strong> Name : </strong> Duangkamol Kaewsalapoom <br>
+    <strong> Nickname : </strong> Kaohom <br>
+    <strong> Birthday : </strong> 04/07/05 <br>
+    <strong> Contact : </strong><a href="https://instagram.com/ka05_z?igshid=NzZlODBkYWE4Ng==" style="color: #000000;"> ka05_z
+        Instagram</a> <br>
+</p>
+<center> <iframe width="500" height="500"
+    src="video/myvideover2.mp4"
+    frameborder="0" allowfullscreen></iframe>
+</center>
 
+<h2> About Me </h2>
 
-        <p>
-            <strong> Name : </strong> Duangkamol Kaewsalapoom <br>
-            <strong> Nickname : </strong> Kaohom <br>
-            <strong> Birthday : </strong> 04/07/05 <br>
-            <strong> Contact : </strong><a href="https://instagram.com/ka05_z?igshid=NzZlODBkYWE4Ng=="> ka05_z
-                Instagram</a> <br>
+    <p> I'm 18 years old currently studying at <b><i>Thammasat University</i></b> in the <b><ins>Computer Science
+                department</ins></b>.
+        I'm the eldest child and have one younger sister. I have two pets, a dog named Latte and a cat named Jumbo.
 
+    </p>
 
-        </p>
+    <h2> My Hoppies </h2>
+    <p>One of my hoppy is listening to music; I really enjoy it and can listen to it all the time. My favorite music
+        band
+        is <q>Tattoo Colour</q>,I particularly enjoy their song<q><a
+                href="https://youtu.be/tk4IVP-JuhI?si=aDtszNf19a0poT9r" style="color: #1e0dbb;"> รถไฟ | PLEASE </a></q>.
+        Additionally, I am interested in collecting vinyl records because of the unique charm they offer, from the
+        album cover artwork to the classic sound of the music.
+    </p>
 
-        <center> <iframe width="500" height="500"
-                src="video/myvideover2.mp4"
-                frameborder="0" allowfullscreen></iframe>
-        </center>
-
-        <h2> About Me </h2>
-
-        <p> I'm 18 years old currently studying at <b><i>Thammasat University</i></b> in the <b><ins>Computer Science
-                    department</ins></b>.
-            I'm the eldest child and have one younger sister. I have two pets, a dog named Latte and a cat named Jumbo.
-        </p>
-
-
-        <h2> My Hoppies </h2>
-        <p>One of my hoppy is listening to music; I really enjoy it and can listen to it all the time. My favorite music
-            band
-            is <q>Tattoo Colour</q>,I particularly enjoy their song<q><a
-                    href="https://youtu.be/tk4IVP-JuhI?si=aDtszNf19a0poT9r"> รถไฟ | PLEASE </a></q>.
-            Additionally, I am interested in collecting vinyl records because of the unique charm they offer, from the
-            album cover artwork to the classic sound of the music.
-
-
-
-        <div class="row">
-            <div class="column">
-                <img src="img/pic1.png" alt="Tattoo color concert" style="width: 200px; height: 200px;">
-            </div>
-            <div class="column">
-                <img src="img/pic4.png" alt="Please" style="width:200px;height: 200px;">
-            </div>
-            <div class="column">
-                <img src="https://japaneast1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Ftuipied-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!vnhiJzJ15UGwTXZKFRJJT_h4KiDvIIJOlvJOwi1PVousAfp9j1aZT6TpJUcWhKM_%2Fitems%2F01ONQKN66MB6Y7C525FVC2VL4BHSTRRDV2%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvdHVpcGllZC1teS5zaGFyZXBvaW50LmNvbUAwYTQzZGViOS1lZmIwLTRmNDYtODU5NC03MTg5OTIzMGZkYTYiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNjk1MDI3NjAwIiwiZXhwIjoiMTY5NTA0OTIwMCIsImVuZHBvaW50dXJsIjoiYnM2TXRpNGJlQWpiL3k1ZXA1ZFYwbGEwbHk1R00zZFVjZW5jdjdKd1ZKMD0iLCJlbmRwb2ludHVybExlbmd0aCI6IjExNyIsImlzbG9vcGJhY2siOiJUcnVlIiwidmVyIjoiaGFzaGVkcHJvb2Z0b2tlbiIsInNpdGVpZCI6Ik1qYzJNamM0WW1VdE56VXpNaTAwTVdVMUxXSXdOR1F0TnpZMFlURTFNVEkwT1RSbSIsIm5hbWVpZCI6IjAjLmZ8bWVtYmVyc2hpcHxkdWFuZ2thbW9sLmthZUBkb21lLnR1LmFjLnRoIiwibmlpIjoibWljcm9zb2Z0LnNoYXJlcG9pbnQiLCJpc3VzZXIiOiJ0cnVlIiwiY2FjaGVrZXkiOiIwaC5mfG1lbWJlcnNoaXB8MTAwMzIwMDJiYjU4NDYyMEBsaXZlLmNvbSIsInNpZCI6IjQ1YTQ0MTcxLTZmYzUtNDBjZS1hMzJhLTQ2YzIxZTI2MDQ3NSIsInR0IjoiMCIsImlwYWRkciI6IjI3LjU1LjgzLjU2In0.bRqGTqEMC89yyc5aS4BSk2_tBivt1TD0n052W2OVEXk&cTag=%22c%3A%7BF1B10FCC-5D77-452D-AAAF-813CA7188EBA%7D%2C1%22&encodeFailures=1&width=819&height=819&srcWidth=3024&srcHeight=3024" alt="Tattoo color concert at cat t-shirt" style="width: 200px; height: 200px;">
-            </div>
-        
+    <div class="row">
+        <div class="column">
+            <img src="img/pic1.png">
         </div>
-
-        </p>
-
+        <div class="column">
+            <img src="img/pic4.png">
+        </div>
+        <div class="column">
+            <img src="img/pic3.png">
+        </div>
+    
     </div>
+
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside" style="text-align:left ;">
+      <h2>Who?</h2>
+      <p>The girl presenting this homepage is Duangkamol Kaewsalapoom, also known as Kaohom.</p>
+      <h2>About Her?</h2>
+      <p>Duangkamol, aged 18, is currently a student at Thammasat University in the Computer Science department. She's the eldest child with a younger sister and has two adorable pets - Latte, a dog, and Jumbo, a cat.</p>
+      <h2>Her hobby</h2>
+      <p>One of her passions is listening to music, and her favorite band is Tattoo Colour. She particularly enjoys their song 'รถไฟ | PLEASE.' Duangkamol is also an avid collector of vinyl records, appreciating their unique charm from album artwork to classic music.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 style="color: #ffffff;"> CSTU Webpage </h2>
+</div>
 
 </body>
-
-
 </html>
+
+
